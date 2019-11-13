@@ -171,9 +171,6 @@ export class Prediccion2seccion2Component implements OnInit {
   }
 
   
-  
-
-  
 
   reiniciar():void{
     this.createPregunta_Paciente();
