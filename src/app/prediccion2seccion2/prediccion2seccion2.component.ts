@@ -27,12 +27,7 @@ export class Prediccion2seccion2Component implements OnInit {
 
   ngOnInit() {
   }
-  logout(){
-    
-    this.reiniciar();
-    localStorage.removeItem('email');
-    this.router.navigate(['']);
-  }
+  
     preguntas:Number[]
   createPregunta_Paciente(): void{
     var pregunta= new Pregunta_Paciente()
@@ -177,6 +172,13 @@ export class Prediccion2seccion2Component implements OnInit {
     for(var i=2;i<=7;i++){
       localStorage.removeItem('respuesta'+i);
     }
+  }
+
+  logout(){
+    
+    this.reiniciar();
+    localStorage.removeItem('email');
+    this.router.navigate(['']);
   }
 
 }
